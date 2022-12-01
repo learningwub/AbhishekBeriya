@@ -1,0 +1,170 @@
+body{
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: #0F172A;  /* Neutral/gray 900 */
+  margin: 0%;
+  padding: 0%;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+#logo{
+  margin-left: 8.2%;
+  margin-top: 4vh;
+
+  /* width: 80px;
+  height: 71.08px; */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;  */
+}
+#menu{
+  margin-right: 8.2%;
+  margin-top: 4vh;
+
+  /* width: 60px;
+  height: 46px; */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#intro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+
+  width: 60.83vw;
+  height: auto;
+  padding: 1.7vh 2vw;
+
+  gap: 1.7vh;
+  position: absolute;
+  left: 22.01vw;
+  top: 30vh;
+
+}
+#line1{
+  /* Hey, I am Abhishek Bariya, */
+  margin: 0%;
+  /* width: 304px;
+  height: 38px; */
+
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 160%;
+  
+  /* Inside auto layout */
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+#line2{
+  /* I design digital Products to help your Brand. */
+  margin: 0%;
+  /* width: 836px;
+  height: 160px; */
+
+  font-weight: 600;
+  font-size: 3.3em;
+  line-height: 125%;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
+}
+
+#contactMe{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2vh;
+  padding: 0vh 0vw;
+  gap: 1.3vw;
+
+  /* position: absolute;
+  width: 21.18vw;
+  height: auto;
+  left: 22.01vw;
+  top: 55vh; */
+}
+#contactMe p{
+  margin: 0%;
+  width: auto;
+  height: auto;
+
+  /* Button & Captions */
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 108.33%;
+  text-decoration-line: underline;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#contactMe img{
+  /* width: 57px;
+  height: 24px; */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#scroll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 1vh;
+
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 50vw;
+  top: 80vh;
+}
+#scroll p{
+  /* width: 42px;
+  height: 20px; */
+  margin: 0%;
+  padding: 0%;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 125%;
+  
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#scroll img{
+  /* width: 24px;
+  height: 24px; */
+  margin: 0%;
+  padding: 0%;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
