@@ -23,19 +23,13 @@ nav{
   margin-left: 8.2%;
   margin-top: 4vh;
 
-  /* width: 80px;
-  height: 71.08px; */
-
   flex: none;
   order: 0;
-  flex-grow: 0;  */
+  flex-grow: 0;  
 }
 #menu{
   margin-right: 8.2%;
   margin-top: 4vh;
-
-  /* width: 60px;
-  height: 46px; */
 
   flex: none;
   order: 1;
@@ -60,32 +54,20 @@ nav{
 #line1{
   /* Hey, I am Abhishek Bariya, */
   margin: 0%;
-  /* width: 304px;
-  height: 38px; */
 
   font-weight: 500;
   font-size: 1.2em;
   line-height: 160%;
-  
-  /* Inside auto layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0; */
 }
 #line2{
   /* I design digital Products to help your Brand. */
   margin: 0%;
-  /* width: 836px;
   height: 160px; */
 
   font-weight: 600;
   font-size: 3.3em;
   line-height: 125%;
 
-  /* Inside auto layout */
-  /* flex: none;
-  order: 1;
-  flex-grow: 0; */
 }
 
 #contactMe{
@@ -97,11 +79,7 @@ nav{
   padding: 0vh 0vw;
   gap: 1.3vw;
 
-  /* position: absolute;
-  width: 21.18vw;
-  height: auto;
-  left: 22.01vw;
-  top: 55vh; */
+
 }
 #contactMe p{
   margin: 0%;
@@ -119,9 +97,6 @@ nav{
   flex-grow: 0;
 }
 #contactMe img{
-  /* width: 57px;
-  height: 24px; */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -141,8 +116,6 @@ nav{
   top: 85vh;
 }
 #scroll p{
-  /* width: 42px;
-  height: 20px; */
   margin: 0%;
   padding: 0%;
   
@@ -160,8 +133,6 @@ nav{
   flex-grow: 0;
 }
 #scroll img{
-  /* width: 24px;
-  height: 24px; */
   margin: 0%;
   padding: 0%;
   
