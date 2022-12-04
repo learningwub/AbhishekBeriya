@@ -9,7 +9,7 @@
 }
 body {
   background-color: #f9fafd;
-  background-image: url(bg.png);
+  /* background-image: url(bg.png); */
   background-repeat: no-repeat;
 
   font-family: "Raleway", sans-serif;
@@ -18,11 +18,13 @@ body {
   color: #0f172a; /* Neutral/gray 900 */
 
   /* overflow-x: hidden; */
+  /* overflow: hidden; */
 
   margin: 0%;
   padding: 0%;
 }
 nav {
+  scale: 0.85;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,7 +34,7 @@ nav {
   padding: 0px;
   width: 100%;
   height: auto;
-  position: absolute;
+  position: normal;
 }
 #logo {
   margin-left: 8.2vw;
@@ -42,7 +44,7 @@ nav {
   order: 0;
   flex-grow: 0;
 }
-#menu {
+.menuIcon {
   margin-right: 8.2%;
   margin-top: 4vh;
 
@@ -51,7 +53,100 @@ nav {
   flex-grow: 0;
 }
 
+#closeMenu{
+  /* display: none; */
+}
+#openMenu{
+  display: none;
+}
+
+#menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+}
+#menuList{
+  border-right: 2.5px solid #E3E3E3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 40vw;
+  height: inherit;
+  position: relative;
+  /* top: 30vh;
+  left: 8.2vw; */
+}
+#menuList ul{
+  list-style: none;
+  width: fit-content;
+  height: fit-content;
+  
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 200%;  
+}
+.selected{
+    /* Gradient/Side ways */
+    background: linear-gradient(250.39deg, #1CC3FF 13.14%, #A96EE4 58.14%, #FF48A9 103.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#menuSocials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-left: 2.5px solid #E3E3E3;
+  width: 60vw;
+  height: inherit;
+  position: relative;
+}
+#menuSocials figure{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menuSocials h1{
+  margin: 0%;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 150%;
+}
+#menuSocials figcaption{
+  /* scale: 0.85; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 0px;
+
+  font-family: 'Helvetica LT Std', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 125%;
+}
+#menuSocials .socialsIcon{
+  justify-content: space-between;
+  width: 60%;
+}
+
 #intro {
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,7 +175,6 @@ nav {
   font-size: 3.3em;
   line-height: 125%;
 }
-
 #contactMe {
   display: flex;
   flex-direction: row;
@@ -111,7 +205,8 @@ nav {
   flex-grow: 0;
 }
 #scroll {
-  visibility: visible;
+  display: none;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +388,7 @@ footer {
 
   width: fit-content;
 }
-#socialsIcon{ 
+.socialsIcon{ 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
