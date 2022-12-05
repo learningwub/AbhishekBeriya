@@ -9,22 +9,25 @@
 }
 body {
   background-color: #f9fafd;
-  /* background-image: url(bg.png); */
-  background-repeat: no-repeat;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
   letter-spacing: 0.02em;
   color: #0f172a; /* Neutral/gray 900 */
-
+  
   /* overflow-x: hidden; */
   /* overflow: hidden; */
-
+  
   margin: 0%;
   padding: 0%;
 }
+#homePage {
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+}
+
 nav {
-  scale: 0.85;
+  /* scale: 0.85; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,14 +57,14 @@ nav {
 }
 
 #closeMenu{
-  /* display: none; */
+  display: none;
 }
 #openMenu{
-  display: none;
+  /* display: none; */
 }
 
 #menu{
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -153,12 +156,13 @@ nav {
 } */
 
 #intro {
-  visibility: hidden;
+  /* visibility: hidden; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  width: 60.83vw;
+  /* width: 60.83vw; */
+  width: fit-content;
   height: auto;
   padding: 1.7vh 2vw;
 
@@ -211,9 +215,56 @@ nav {
   order: 1;
   flex-grow: 0;
 }
+
+#aboutIntro {
+  visibility: visible;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  
+  /* width: 60.83vw; */
+  width: 100vw;
+  height: 80vh;
+  /* padding: 1.7vh 2vw; */
+  /* padding: 0%; */
+
+  gap: 1.7vh;
+  position: relative;
+  /* top: 10vh; */
+  /* left: 22.01vw; */
+}
+#knowMeMore {
+  background-color: black;
+
+  width: 70vw;
+  height: fit-content;
+}
+.imageContainer{
+  scale: 0.8;
+  display: flex;
+  align-items: center;
+  /* z-index: -50%; */
+  width: 225px;
+  margin-left: 20vw;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(229.96deg, #1CC3FF -0.04%, #FF48A9 100.31%);
+  mix-blend-mode: normal;
+}
+.imageContainer h1{
+  position: relative;
+  left: -27%;
+
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 150%;  
+  white-space: nowrap;
+}
+.imageContainer img{
+  padding: 2.0041vw;
+}
+
 #scroll {
-  display: none;
-  visibility: hidden;
+  visibility: visible;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,6 +301,25 @@ nav {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+#aboutMe {
+  display: flex;
+  justify-content: center;
+}
+pre {
+  width: fit-content;
+  height: fit-content;
+  padding: 10vw 0vw 0vw 10vw;
+  margin-bottom: 0%;
+  
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  color: #0F172A;
 }
 
 #caseStudies{
@@ -379,13 +449,21 @@ nav {
 footer {
   width: 100vw;
   height: 70vh;
-  position: absolute;
-  top: 469vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#homeFooter{
+  position: absolute;
+  top: 469vh;
+}
+#aboutFooter{
+  position: normal;
+  height: fit-content;
+  margin: 20vh 0vw;
 }
 .socials{
   font-weight: 700;
