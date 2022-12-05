@@ -9,17 +9,21 @@
 }
 body {
   background-color: #f9fafd;
-
+  
   font-family: "Raleway", sans-serif;
   font-style: normal;
   letter-spacing: 0.02em;
   color: #0f172a; /* Neutral/gray 900 */
   
   /* overflow-x: hidden; */
-  /* overflow: hidden; */
+  overflow: scroll;
   
   margin: 0%;
   padding: 0%;
+}
+a {
+  text-decoration: none;
+  color: #0f172a;
 }
 #homePage {
   background-image: url(bg.png);
@@ -28,6 +32,7 @@ body {
 
 nav {
   /* scale: 0.85; */
+  /* transform: scale('0.85'); */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,9 +64,9 @@ nav {
 #closeMenu{
   display: none;
 }
-#openMenu{
-  /* display: none; */
-}
+/* #openMenu{
+  display: none;
+} */
 
 #menu{
   display: none;
@@ -465,6 +470,7 @@ footer {
   height: fit-content;
   margin: 20vh 0vw;
 }
+
 .socials{
   font-weight: 700;
   font-size: 1.65rem;
