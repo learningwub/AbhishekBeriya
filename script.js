@@ -28,3 +28,5 @@ document.getElementById("openMenu").addEventListener('click', Menu);
 document.getElementById("openMenu").addEventListener('mouseover', Menu);
 // document.getElementById("closeMenu").addEventListener('click', Menu);
 // document.getElementById("closeMenu").addEventListener('mouseover', Menu);
+
+//development started again
