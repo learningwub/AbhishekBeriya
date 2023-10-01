@@ -376,19 +376,29 @@ pre {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 
-  margin: 0vh 5vw;
+  margin: 7vh 15vw;
 }
 /* #caseStudiesContainer :nth-child(even){
       margin-top: 10vh;
 }*/
+.caseStudies{
+  /* flex: 50%; */
+  /* border: 1px solid red; */
+}
+.caseStudies:hover{
+  /* scale: 1.05; */
+  /* box-shadow: #0f172a; */
+}
 .projects{
+  /* transform: scale(1.1); */
+  /* scale: 0.9; */
+  /* cursor: pointer; */
   font-size: 2rem;
   width: fit-content;
   margin: 0%;
-  scale: 0.8;
 }
 .projects figcaption{
   padding-top: 7%;
@@ -404,10 +414,10 @@ pre {
   background-color: aqua;
 } */
 #project2{
-  margin-top: 10%;
+  margin-top: 30%;
 }
 #project4{
-  margin-top: 10%;
+  margin-top: 30%;
 }
 #myGoal{
   display: flex;
@@ -420,8 +430,8 @@ pre {
   height: 70vh;
   position: absolute;
   top: 310vh;
-
 }
+
 .gradientBg{
   display: flex;
   align-items: center;
@@ -518,6 +528,20 @@ footer {
   width: 100%;
   /* padding: 2% 0%; */
 }
+
+.be:hover{
+  content: url('Gakar-icons_behance-fill.svg');
+}
+.tw:hover{
+  content: url('Gakar-icons_twitter-fill.svg');
+}
+.ig:hover{
+  content: url('Gakar-icons_instagram-fill.svg');
+}
+.em:hover{
+  content: url('Gfluent_mail-16-filled.svg');
+}
+
 #UpArrow{
   scale: 0.7;
 

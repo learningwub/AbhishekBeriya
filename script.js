@@ -64,3 +64,6 @@ function up(){
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 document.getElementById('UpArrow').addEventListener('click', up)
+function replace(){
+  document.getElementById
+}
