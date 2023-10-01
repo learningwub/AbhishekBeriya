@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Abhishek Bariya</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <base href="https://learningwub.github.io/AbhishekBeriya/" target="_self">
+    <!-- <base href="https://learningwub.github.io/AbhishekBeriya/" target="_self"> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,28 +27,28 @@
   </head>
   <body id="homePage">
     <nav id="nav">
-      <img id="logo" src="logo.png" alt="Logo" srcset="" />
+      <a href='index.html'><img id="logo" src="logo.png" alt="Logo" srcset="" /></a>
       <img id="openMenu" class="menuIcon" src="menu.png" alt="Open Menu" srcset="" />
-      <img id="closeMenu" class="menuIcon" src="closeMenu.svg" alt="Close Menu" srcset="" />
+      <img id="closeMenu" class="menuIcon" class="OpenedMenu" src="closeMenu.svg" alt="Close Menu" srcset="" />
     </nav>
     <div id="menu">
       <div id="menuList">
         <ul>
-          <a href="index.html"><li class="selected">Home</li></a>
-          <a href="about.html"><li>About me</li></a>
+          <a href="index.html"><li id="l1" class="selected" class="link">Home</li></a>
+          <a href="about.html"><li id="l2" class="link">About me</li></a>
         </ul>
       </div>
       <div id="menuSocials">
         <div class="socials">
           <figure>
             <h1>Get in touch with me</h1>
-            <figcaption><img src="unfilledMail.svg" alt="Email Icon">theabhishekbariya@gmail.com</figcaption>
+            <figcaption><img src="unfilledMail.svg" alt="Email Icon"><a href="mailto:theabhishekbariya@gmail.com" class="link" class="link">theabhishekbariya@gmail.com</a></figcaption>
           </figure>
           <div class="socialsIcon">
-            <img src="akar-icons_behance-fill.svg" alt="Link to Behance">
-            <img src="akar-icons_twitter-fill.svg" alt="Link to Twitter">
-            <img src="akar-icons_instagram-fill.svg" alt="Link to Instagram">
-            <img src="fluent_mail-16-filled.svg" alt="Link to E-mail">
+            <a href="https://www.behance.net/rock" class="link" target="_blank"><img src="akar-icons_behance-fill.svg" alt="Link to Behance"></a>
+            <a href="https://twitter.com/" class="link" target="_blank"><img src="akar-icons_twitter-fill.svg" alt="Link to Twitter"></a>
+            <a href="https://www.instagram.com/designedbyabhishek/" class="link" target="_blank"><img src="akar-icons_instagram-fill.svg" alt="Link to Instagram"></a>
+            <a href="mailto:theabhishekbariya@gmail.com" class="link"><img src="fluent_mail-16-filled.svg" alt="Link to E-mail"></a>
           </div>
         </div>
       </div>
@@ -59,9 +59,9 @@
         I design digital Products<br />
         to help your Brand.
       </p>
-      <div id="contactMe">
-        <p>Contact with me</p>
-        <img src="arrows.png" alt="Arrows" />
+      <div id="contactMe" class="link">
+        <a href="mailto:theabhishekbariya@gmail.com" class="link"><p>Contact with me</p></a>
+        <a href="mailto:theabhishekbariya@gmail.com" class="link"><img src="arrows.png" alt="Arrows" /></a>
       </div>
     </div>
     <div id="scroll">
@@ -71,21 +71,21 @@
     <div id="caseStudies">
       <h1>Selected Case Studies</h1>
       <div id="caseStudiesContainer">
-        <figure class="projects" id="project1">
+        <figure class="projects" id="project1" class="link">
           <img src="Rectangle2.png" alt="Picture of a project">
-          <figcaption>Project title<img src="arrows.png" alt="Arrows"/></figcaption>
+          <a href="index.html" target="_blank"><figcaption class="link">Project title<img src="arrows.png" alt="Arrows"/></figcaption></a>
         </figure>
         <figure class="projects" id="project2">
           <img src="Rectangle2.png" alt="Picture of a project">
-          <figcaption>Project title<img src="arrows.png" alt="Arrows"/></figcaption>
-        </figure> 
+          <a href="index.html" target="_blank"><figcaption class="link">Project title<img src="arrows.png" alt="Arrows"/></figcaption></a>
+        </figure>
         <figure class="projects" id="project3">
           <img src="Rectangle2.png" alt="Picture of a project">
-          <figcaption>Project title<img src="arrows.png" alt="Arrows"/></figcaption>
+          <a href="index.html" target="_blank"><figcaption class="link">Project title<img src="arrows.png" alt="Arrows"/></figcaption></a>
         </figure>
         <figure class="projects" id="project4">
           <img src="Rectangle2.png" alt="Picture of a project">
-          <figcaption>Project title<img src="arrows.png" alt="Arrows"/></figcaption>
+          <a href="index.html" target="_blank"><figcaption class="link">Project title<img src="arrows.png" alt="Arrows"/></figcaption></a>
         </figure>
       </div>
     </div>
@@ -123,10 +123,10 @@
       <div class="socials">
         <h1>Connect with me on</h1>
         <div class="socialsIcon">
-          <img src="akar-icons_behance-fill.svg" alt="Link to Behance">
-          <img src="akar-icons_twitter-fill.svg" alt="Link to Twitter">
-          <img src="akar-icons_instagram-fill.svg" alt="Link to Instagram">
-          <img src="fluent_mail-16-filled.svg" alt="Link to E-mail">
+          <a href="https://www.behance.net/rock" class="link" target="_blank"><img src="akar-icons_behance-fill.svg" alt="Link to Behance"></a>
+          <a href="https://twitter.com/" class="link" target="_blank"><img src="akar-icons_twitter-fill.svg" alt="Link to Twitter"></a>
+          <a href="https://www.instagram.com/designedbyabhishek/" class="link" target="_blank"><img src="akar-icons_instagram-fill.svg" alt="Link to Instagram"></a>
+          <a href="mailto:theabhishekbariya@gmail.com" class="link"><img src="fluent_mail-16-filled.svg" alt="Link to E-mail"></a>
         </div>
       </div>
       <img src="UpArrow.svg" alt="Click to go back up" id="UpArrow">

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>About me</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <base href="https://learningwub.github.io/AbhishekBeriya/" target="_self">
+    <!-- <base href="https://learningwub.github.io/AbhishekBeriya/" target="_self"> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,28 +27,28 @@
   </head>
   <body id="aboutPage">
     <nav id="nav">
-      <img id="logo" src="logo.png" alt="Logo" srcset="" />
+      <a href='index.html'><img id="logo" src="logo.png" alt="Logo" srcset="" /></a>
       <img id="openMenu" class="menuIcon" src="menu.png" alt="Open Menu" srcset="" />
       <img id="closeMenu" class="menuIcon" src="closeMenu.svg" alt="Close Menu" srcset="" />
     </nav>
     <div id="menu">
       <div id="menuList">
         <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="about.html"><li class="selected">About me</li></a>
+          <a href="index.html"><li id="l1" class="link">Home</li></a>
+          <a href="about.html"><li id="l2" class="selected" class="link">About me</li></a>
         </ul>
       </div>
       <div id="menuSocials">
         <div class="socials">
           <figure>
             <h1>Get in touch with me</h1>
-            <figcaption><img src="unfilledMail.svg" alt="Email Icon">theabhishekbariya@gmail.com</figcaption>
+            <figcaption><img src="unfilledMail.svg" alt="Email Icon"><a href="mailto:theabhishekbariya@gmail.com" class="link" class="link">theabhishekbariya@gmail.com</a></figcaption>
           </figure>
           <div class="socialsIcon">
-            <img src="akar-icons_behance-fill.svg" alt="Link to Behance">
-            <img src="akar-icons_twitter-fill.svg" alt="Link to Twitter">
-            <img src="akar-icons_instagram-fill.svg" alt="Link to Instagram">
-            <img src="fluent_mail-16-filled.svg" alt="Link to E-mail">
+            <a href="https://www.behance.net/rock" class="link" target="_blank"><img src="akar-icons_behance-fill.svg" alt="Link to Behance"></a>
+            <a href="https://twitter.com/" class="link" target="_blank"><img src="akar-icons_twitter-fill.svg" alt="Link to Twitter"></a>
+            <a href="https://www.instagram.com/designedbyabhishek/" class="link" target="_blank"><img src="akar-icons_instagram-fill.svg" alt="Link to Instagram"></a>
+            <a href="mailto:theabhishekbariya@gmail.com" class="link"><img src="fluent_mail-16-filled.svg" alt="Link to E-mail"></a>
           </div>
         </div>
       </div>
@@ -94,33 +94,14 @@
       <div class="socials">
         <h1>Connect with me on</h1>
         <div class="socialsIcon">
-          <img src="akar-icons_behance-fill.svg" alt="Link to Behance">
-          <img src="akar-icons_twitter-fill.svg" alt="Link to Twitter">
-          <img src="akar-icons_instagram-fill.svg" alt="Link to Instagram">
-          <img src="fluent_mail-16-filled.svg" alt="Link to E-mail">
+          <a href="https://www.behance.net/rock" class="link" target="_blank"><img src="akar-icons_behance-fill.svg" alt="Link to Behance"></a>
+          <a href="https://twitter.com/" class="link" target="_blank"><img src="akar-icons_twitter-fill.svg" alt="Link to Twitter"></a>
+          <a href="https://www.instagram.com/designedbyabhishek/" class="link" target="_blank"><img src="akar-icons_instagram-fill.svg" alt="Link to Instagram"></a>
+          <a href="mailto:theabhishekbariya@gmail.com" class="link"><img src="fluent_mail-16-filled.svg" alt="Link to E-mail"></a>
         </div>
       </div>
-      <!-- <img src="UpArrow.svg" alt="Click to go back up" id="UpArrow"> -->
+      <img src="UpArrow.svg" alt="Click to go back up" id="UpArrow">
     </footer>
-    <script>
-      // const openMenu = document.getElementById("openMenu");
-      // console.log(openMenu);
-      function Menu() {
-        document.getElementById('aboutPage').style.overflow = "hidden";
-        document.getElementById('aboutIntro').style.display = "none";
-        document.getElementById('scroll').style.display = "none"; 
-        document.getElementById('openMenu').style.display = "none"; 
-        document.getElementById('aboutMe').style.display = "none"; 
-        document.getElementById('aboutFooter').style.display = "none"; 
-
-        document.getElementById('menu').style.display = 'flex';
-        document.getElementById('closeMenu').style.display = 'flex';
-        // document.getElementById('nav').style.scale = '0.85';
-        document.getElementById('nav').style.transform = 'scale(0.85)';
-        console.log('Menu')
-      }
-      document.getElementById("openMenu").addEventListener('click', Menu);
-      document.getElementById("openMenu").addEventListener('mouseover', Menu);
-    </script>
+    <script src="about.js"></script>
   </body>
 </html>

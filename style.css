@@ -10,7 +10,6 @@
   scrollbar-width: none;  
 }
 body {
-  
   background-color: #f9fafd;
   
   font-family: "Raleway", sans-serif;
@@ -69,16 +68,25 @@ nav {
 #closeMenu{
   display: none;
 }
+#closeMenu:hover{
+  cursor: pointer;
+}
 /* #openMenu{
   display: none;
 } */
+#openMenu:hover{
+  cursor: pointer;
+}
 
 #menu{
   display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+
+  z-index: 2;
   
+  background-color: #f9fafd;
   width: 100vw;
   height: 70vh;
   position: absolute;
@@ -107,13 +115,22 @@ nav {
   font-size: 3.2rem;
   line-height: 200%;  
 }
+.link:hover{
+    cursor: pointer;
+    /* Gradient/Side ways */
+    background: linear-gradient(250.39deg, #1CC3FF 13.14%, #A96EE4 58.14%, #FF48A9 103.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .selected{
     /* Gradient/Side ways */
     background: linear-gradient(250.39deg, #1CC3FF 13.14%, #A96EE4 58.14%, #FF48A9 103.62%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 #menuSocials{
@@ -231,6 +248,8 @@ nav {
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
+
+  z-index: 1;
   
   /* width: 60.83vw; */
   width: 100vw;
@@ -442,7 +461,7 @@ pre {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;   
+  -webkit-text-fill-color: transparent;   
 }
 #riviewWindow{
   /* scroll-snap-type: y mandatory; */
@@ -505,4 +524,7 @@ footer {
   margin-top: 55vh;
   position: absolute;
   left: 91vw;
+}
+#UpArrow:hover{
+  cursor: pointer;
 }

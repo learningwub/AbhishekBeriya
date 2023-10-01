@@ -1,20 +1,10 @@
-// const scroll = document.querySelector('#scroll');
-// console.log(scroll);
-
-// window.addEventListener('scroll', hide);
-// console.log('hello');
-
-// console.log('its linked');
-// const openMenu = document.getElementById("openMenu");
-// console.log(openMenu);
-
 console.log('its linked');
-
 //Close Menu
 function closeMenu() {
-document.getElementById('homePage').style.overflow = "visible";
-document.getElementById('homePage').style.backgroundImage = "url(bg.png)";
-document.getElementById('intro').style.display = "flex";
+document.getElementById('aboutPage').style.overflow = "visible";
+// document.getElementById('aboutPage').style.backgroundImage = "url(bg.png)";
+// document.getElementById('aboutIntro').style.display = "flex";
+document.getElementById('aboutIntro').style.opacity = "1";
 document.getElementById('scroll').style.display = "flex"; 
 document.getElementById('openMenu').style.display = "flex"; 
 
@@ -26,9 +16,10 @@ console.log('closeMenu')
 
 //Open Menu
 function openMenu() {
-  document.getElementById('homePage').style.overflow = "hidden";
-  document.getElementById('homePage').style.backgroundImage = "none";
-  document.getElementById('intro').style.display = "none";
+  document.getElementById('aboutPage').style.overflow = "hidden";
+  document.getElementById('aboutPage').style.backgroundImage = "none";
+  // document.getElementById('aboutIntro').style.display = "none";
+  // document.getElementById('aboutIntro').style.opacity = "0";
   document.getElementById('scroll').style.display = "none"; 
   document.getElementById('openMenu').style.display = "none"; 
 
@@ -39,23 +30,19 @@ function openMenu() {
   console.log('openMenu')
 }
 document.getElementById("openMenu").addEventListener('click', openMenu);
-// document.getElementById("openMenu").addEventListener('mouseover', openMenu)
-
 document.getElementById("closeMenu").addEventListener('click', closeMenu);
-// document.getElementById("closeMenu").addEventListener('mouseout', closeMenu);
 
-//development started again 01/10/23
 
 // Hover styling on text
 function hover(){
-  document.getElementById('l1').classList.remove("selected");
+  document.getElementById('l2').classList.remove("selected");
 }
 //Hover styling on text
 function unhover(){
-  document.getElementById('l1').classList.add("selected");
+  document.getElementById('l2').classList.add("selected");
 }
-document.getElementById('l2').addEventListener('mouseover', hover)
-document.getElementById('l2').addEventListener('mouseout', unhover)
+document.getElementById('l1').addEventListener('mouseover', hover)
+document.getElementById('l1').addEventListener('mouseout', unhover)
 
 //Remove the scroll svg
 function remove(){
