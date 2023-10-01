@@ -38,6 +38,7 @@ function openMenu() {
   document.getElementById('nav').style.transform = 'scale(0.85)';
   console.log('openMenu')
 }
+<<<<<<< HEAD
 document.getElementById("openMenu").addEventListener('click', openMenu);
 // document.getElementById("openMenu").addEventListener('mouseover', openMenu)
 
@@ -68,3 +69,11 @@ function up(){
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 document.getElementById('UpArrow').addEventListener('click', up)
+=======
+document.getElementById("openMenu").addEventListener('click', Menu);
+document.getElementById("openMenu").addEventListener('mouseover', Menu);
+// document.getElementById("closeMenu").addEventListener('click', Menu);
+// document.getElementById("closeMenu").addEventListener('mouseover', Menu);
+
+//testing gitlens
+>>>>>>> 9f116b96f42136074a94cb32dbf89a7224be2f8c
